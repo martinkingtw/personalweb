@@ -1,38 +1,56 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-size: x-large;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1em;
+  font-family: 'Megrim', cursive;
+  font-size: 2em;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.vision-area {
+  margin: 1em 5em;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vision-img-container {
+  margin: auto;
+  width: 500px;
+  height: 375px;
+  position: relative;
+}
+
+.vision-img {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.vision-img-overlap {
+  opacity: 0.2;
+  filter: invert(100%);
+  mix-blend-mode: multiply;
+}
+
+.vision-input {
+  margin: 3em 5em 1em;
+}
+
+.language-input {
+  margin: 1em 5em;
+}
+
+.red {
+  backdrop-filter: invert(22%) sepia(85%) saturate(6473%) hue-rotate(360deg) brightness(91%) contrast(125%);
+}
+
+.green {
+  backdrop-filter: invert(46%) sepia(28%) saturate(3301%) hue-rotate(90deg) brightness(127%) contrast(118%);
+}
+
+.blue {
+  backdrop-filter: invert(8%) sepia(100%) saturate(7141%) hue-rotate(247deg) brightness(100%) contrast(141%);
 }
